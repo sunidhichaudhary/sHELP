@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back6"
+        android:alpha="0.1"/>
+
+    <Button
+        android:id="@+id/buttonTrackMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/trackme"
+        android:fontFamily="casual"
+        android:text="Track Me"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonTrackMe"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/buttonActivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/activate"
+            android:fontFamily="casual"
+            android:text="Activate\nSOS"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:alpha="0.6"
+            android:textSize="35sp"
+            android:paddingTop="16dp"/>
+        <Button
+            android:id="@+id/buttonSafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/buttonActivate"
+            android:layout_alignLeft="@id/buttonActivate"
+            android:layout_alignRight="@id/buttonActivate"
+            android:fontFamily="casual"
+            android:text="Now Safe"
+            android:background="@drawable/trackme"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
